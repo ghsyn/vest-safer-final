@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="미세먼지"
+                android:text="충격감지"
                 android:textColor="#84978F"
                 android:textStyle="bold"
                 android:textSize="17sp"/>

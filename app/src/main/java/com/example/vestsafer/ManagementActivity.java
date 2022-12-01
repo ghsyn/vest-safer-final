@@ -161,7 +161,7 @@ public class ManagementActivity extends AppCompatActivity {
                             } else {
                                 androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(ManagementActivity.this);
                                 builder.setMessage("회원 등록에 실패했습니다.")
-                                        .setNegativeButton("다시시도", null)
+                                        .setNegativeButton("다시 시도", null)
                                         .create()
                                         .show();
                             }

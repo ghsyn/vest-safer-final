@@ -105,7 +105,7 @@
                     android:layout_marginTop="@dimen/_4sdp"
                     android:text="위치"
                     android:textColor="@color/primary_text"
-                    android:textSize="@dimen/_16ssp"/>
+                    android:textSize="18dp"/>
 
             </LinearLayout>
 
@@ -131,7 +131,7 @@
                     android:layout_marginTop="@dimen/_4sdp"
                     android:text="공사일정"
                     android:textColor="@color/primary_text"
-                    android:textSize="@dimen/_16ssp"/>
+                    android:textSize="18dp"/>
 
             </LinearLayout>
             <LinearLayout
@@ -156,7 +156,7 @@
                     android:layout_marginTop="@dimen/_4sdp"
                     android:text="비상매뉴얼"
                     android:textColor="@color/primary_text"
-                    android:textSize="@dimen/_16ssp"/>
+                    android:textSize="18dp"/>
 
             </LinearLayout>
 
@@ -195,7 +195,7 @@
                 android:background="@drawable/buttonshape_2"
                 android:gravity="center"
 
-                android:text="0㎍/㎥"
+                android:text="0 / 1024"
                 android:textColor="@color/app_name_color"
                 android:textSize="24dp" />
 

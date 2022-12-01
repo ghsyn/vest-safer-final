@@ -232,32 +232,38 @@ public class WelcomActivity extends AppCompatActivity {
 
                 }
                 if (cco >= 0 && cco <= 20) {
+                    coText.setText(co.concat("ppm"));
+                    coText.setTextColor(Color.BLACK);
                     //coLogo.setImageResource(R.drawable.good);
+                } else if (cco >= 21 && cco <= 400) {
                     coText.setText(co.concat("ppm"));
-                } else if (ddust >= 21 && ddust <= 400) {
+                    coText.setTextColor(Color.BLACK);
                     //coLogo.setImageResource(R.drawable.soso);
+                } else if (cco >= 401 && cco <= 800) {
                     coText.setText(co.concat("ppm"));
-                } else if (ddust >= 401 && ddust <= 800) {
-                    coText.setText(co.concat("ppm"));
+                    coText.setTextColor(Color.BLACK);
                     //coLogo.setImageResource(R.drawable.bad);
-                } else if (ddust >= 801) {
-                    coText.setTextColor(Color.RED);
+                } else if (cco >= 801) {
                     coText.setText(co.concat("ppm"));
+                    coText.setTextColor(Color.RED);
                     //coLogo.setImageResource(R.drawable.devil);
                 }
 
                 if (ddust >= 0 && ddust <= 30) {
-                    dustText.setText(dust.concat("㎍/㎥"));
+                    dustText.setText(dust.concat(" / 1024"));
+                    coText.setTextColor(Color.BLACK);
                     //dustLogo.setImageResource(R.drawable.good);
                 } else if (ddust >= 31 && ddust <= 80) {
+                    dustText.setText(dust.concat(" / 1024"));
+                    coText.setTextColor(Color.BLACK);
                     //dustLogo.setImageResource(R.drawable.soso);
-                    dustText.setText(dust.concat("㎍/㎥"));
                 } else if (ddust >= 81 && ddust <= 150) {
+                    dustText.setText(dust.concat(" / 1024"));
+                    coText.setTextColor(Color.BLACK);
                     //dustLogo.setImageResource(R.drawable.bad);
-                    dustText.setText(dust.concat("㎍/㎥"));
-                } else if (ddust >= 151) {
+                } else if (ddust >= 1000) {
+                    dustText.setText(dust.concat(" / 1024"));
                     dustText.setTextColor(Color.RED);
-                    dustText.setText(dust.concat("㎍/㎥"));
                     //dustLogo.setImageResource(R.drawable.devil);
                 }
 
@@ -291,13 +297,13 @@ public class WelcomActivity extends AppCompatActivity {
             @Override
             public void onDeviceDisconnected() {//연결해제
                 Toast.makeText(getApplicationContext()
-                        , "연결해제", Toast.LENGTH_SHORT).show();
+                        , "연결 해제", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onDeviceConnectionFailed() {//연결실패
                 Toast.makeText(getApplicationContext()
-                        , "연결실패", Toast.LENGTH_SHORT).show();
+                        , "연결 실패", Toast.LENGTH_SHORT).show();
             }
         });
 

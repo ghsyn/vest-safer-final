@@ -19,7 +19,7 @@
         android:layout_marginTop="120dp"
         android:text="SmartVest"
         android:textColor="#FFFFFF"
-        android:textSize="58sp"
+        android:textSize="56sp"
         android:textStyle="italic"
          />
 

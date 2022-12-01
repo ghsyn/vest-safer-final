@@ -69,7 +69,8 @@
         android:dividerHeight="10dp"
         android:divider="@drawable/titlebar_underline"
         android:paddingBottom="48dp"
-        android:clipToPadding="false"></ListView>
+        android:clipToPadding="false">
+    </ListView>
 
 
 
